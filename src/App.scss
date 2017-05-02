@@ -1,0 +1,44 @@
+@mixin rotate($degrees: 180) {
+  transform: rotate(#{$degrees}deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  *zoom: 1;
+}
+
+
+body {
+  overflow:hidden;
+  font-size:18px;
+  font-weight:700;
+  font-family:Arial;
+  background-color: orange;
+}
+
+.container {
+  flex: 1;
+  justify-content: space-between;
+
+  .cow{
+    width: 100px;
+    height: 50px;
+    padding: 30;
+    margin: auto;
+    justify-content: center;
+    @include rotate(45deg);
+    &:hover {
+      @include rotate(180);
+    }
+  }
+  .cow1{
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    padding: 30;
+    margin: auto;
+    justify-content: center;
+    @include rotate(45deg);
+    &:hover {
+      @include rotate(180);
+    }
+  }
+
+}

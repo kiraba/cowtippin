@@ -1,0 +1,39 @@
+body {
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Arial;
+  background-color: orange; }
+
+.container {
+  flex: 1;
+  justify-content: space-between; }
+  .container .cow {
+    width: 100px;
+    height: 50px;
+    padding: 30;
+    margin: auto;
+    justify-content: center;
+    transform: rotate(45degdeg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
+    *zoom: 1; }
+    .container .cow:hover {
+      transform: rotate(180deg);
+      filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(180), M12=-sin(180), M21=sin(180), M22=cos(180));
+      *zoom: 1; }
+  .container .cow1 {
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    padding: 30;
+    margin: auto;
+    justify-content: center;
+    transform: rotate(45degdeg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
+    *zoom: 1; }
+    .container .cow1:hover {
+      transform: rotate(180deg);
+      filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(180), M12=-sin(180), M21=sin(180), M22=cos(180));
+      *zoom: 1; }
+
+/*# sourceMappingURL=App.css.map */
